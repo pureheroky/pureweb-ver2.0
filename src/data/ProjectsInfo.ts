@@ -63,7 +63,7 @@ const ProjectList: { [key: string]: Project } = {
       "Telegram bot that showing my knowledge stack/projects/latest commits.\nUsed tools: Python and telegram-bot-api.\n\n\nP.S It is not yet known whether a server will be allocated for this bot.",
   },
   pr5: {
-    name: "Palomaresbooks.ru",
+    name: "Palomaresbook.ru",
     githubLink: "https://github.com/pureheroky/palomaresbooks/tree/master",
     image: pr5,
     status: "complete",
@@ -79,7 +79,7 @@ const ProjectList: { [key: string]: Project } = {
     image: pr6,
     status: "complete",
     id: 6,
-    isComplete: null,
+    isComplete: true,
     date: "21.12.2023",
     description: "Copy of telegram bot written on python... but on golang now.",
   },
