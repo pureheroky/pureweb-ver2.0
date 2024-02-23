@@ -56,12 +56,16 @@ const Welcome: React.FC = () => {
           ></img>
         </div>
         <div className="mt-5 flex flex-col items-center text-center">
-          <span className="text-black-blue-dark-darker font-Poppins text-[8px] md:text-xl xl:text-2xl 2xl:text-3xl font-bold">
-            pureheroky
-          </span>
-          <span className="text-black-blue-dark-darker pt-2 font-Poppins text-[6px] md:text-xs xl:text-xs 2xl:text-xl font-semibold ">
-            18 y.o fullstack/python developer
-          </span>
+          <Typing
+            text="pureheroky"
+            delay={40}
+            styleElem="text-black-blue-dark-darker font-Poppins text-[8px] md:text-xl xl:text-2xl 2xl:text-3xl font-bold"
+          />
+          <Typing
+            text="18 y.o fullstack/software developer"
+            delay={40}
+            styleElem="text-black-blue-dark-darker pt-2 font-Poppins text-[6px] md:text-xs xl:text-xs 2xl:text-xl font-semibold "
+          />
 
           <div className="flex flex-col">
             <Typing
@@ -85,9 +89,11 @@ const Welcome: React.FC = () => {
             />
           </div>
 
-          <span className="text-black-blue-dark-darker xl:pt-24 font-Poppins text-[6px] md:text-xs xl:text-xs 2xl:text-xl font-semibold">
-            scroll up to reveal other information
-          </span>
+          <Typing
+            text="scroll up to reveal other information"
+            delay={40}
+            styleElem="text-black-blue-dark-darker xl:pt-24 font-Poppins text-[6px] md:text-xs xl:text-xs 2xl:text-xl font-semibold"
+          />
         </div>
       </animated.div>
     );
