@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import skills from "../data/skills";
 
-const Skills: React.FC = () => {
+const Skills: React.FC<{ inside: () => void; outside: () => void }> = ({
+  inside,
+  outside,
+}) => {
   const props = useSpring({
     opacity: 1,
     from: { opacity: 0 },
@@ -62,13 +65,15 @@ const Skills: React.FC = () => {
           />
         </div>
         <div
-          className={`grid 2xl:grid-cols-4 md:grid-cols-4 grid-cols-5 xl:mt-4 mt-2`}
+          className={`grid 2xl:grid-cols-4 xl:h-96 overflow-y-auto md:grid-cols-4 grid-cols-5 xl:mt-4 mt-2 bg-vanilla/15 z-20 rounded-lg`}
+          onMouseEnter={inside}
+          onMouseLeave={outside}
         >
           {elements.map((el, ind) => {
             return (
               <div
                 key={ind}
-                className="text-center xl:m-2 m-1 2xl:text-2xl md:text-[8px] text-[6px] font-Poppins font-semibold rounded-xl text-eerie shadow-md bg-vanilla/10 xl:p-3 md:p-1 p-1"
+                className="text-center flex items-center justify-center xl:m-2 m-1 2xl:text-2xl md:text-[8px] text-[6px] font-Poppins font-semibold rounded-xl text-eerie shadow-md bg-vanilla/10 xl:p-3 md:p-1 p-1"
               >
                 {el}
               </div>
@@ -95,6 +100,8 @@ const Skills: React.FC = () => {
         <div
           className={`grid grid-cols-2 mt-4 h-80 overflow-y-auto bg-vanilla/10 rounded-lg`}
           style={{ maxHeight: "calc(100vh - 100px)" }}
+          onMouseEnter={inside}
+          onMouseLeave={outside}
         >
           {elements.map((el, ind) => {
             return (

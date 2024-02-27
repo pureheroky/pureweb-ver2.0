@@ -44,25 +44,34 @@ function App() {
   const secondPage = [emptycircle, currcircle, emptycircle, emptycircle];
   const thirdPage = [emptycircle, emptycircle, currcircle, emptycircle];
   const fourthPage = [emptycircle, emptycircle, emptycircle, currcircle];
-  const [cursorInside, setCursorInside] = React.useState(false);
+  const [cursorInsideProjects, setCursorInsideProjects] = React.useState(false);
+  const [cursorInsideSkills, setCursorInsideSkills] = React.useState(false);
 
   const pages = [firstPage, secondPage, thirdPage, fourthPage];
 
   const [circles, setCircles] = React.useState(firstPage);
 
-  const Inside = () => {
-    setCursorInside(true);
+  const InsideProjects = () => {
+    setCursorInsideProjects(true);
   };
 
-  const Outside = () => {
-    setCursorInside(false);
+  const OutsideProjects = () => {
+    setCursorInsideProjects(false);
+  };
+
+  const InsideSkills = () => {
+    setCursorInsideSkills(true);
+  };
+
+  const OutsideSkills = () => {
+    setCursorInsideSkills(false);
   };
 
   const components = [
     <Welcome />,
     <About />,
-    <Skills />,
-    <Projects inside={Inside} outside={Outside} />,
+    <Skills inside={InsideSkills} outside={OutsideSkills} />,
+    <Projects inside={InsideProjects} outside={OutsideProjects} />,
   ];
 
   function getDirection(e: React.WheelEvent<HTMLDivElement>) {
@@ -87,7 +96,8 @@ function App() {
         className="w-full h-full"
         style={{ overflowY: "auto" }}
         onWheel={(e) => {
-          if (cursorInside) return;
+          if (cursorInsideProjects) return;
+          else if (cursorInsideSkills) return;
           getDirection(e);
         }}
       >
