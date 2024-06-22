@@ -2,16 +2,9 @@
   "builds": [
     { "src": "package.json", "use": "@vercel/static-build" }
   ],
-  "rewrites": [
-    { "source": "/static/(.*)", "destination": "/static/$1" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ],
-  "headers": [
-    {
-      "source": "/static/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "no-cache" }
-      ]
-    }
-  ]
+  "outputDirectory": "build"
 }
