@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../images/avatar7.jpg";
+import avatar from "../images/avatar8.jpg";
 import xd from "../images/xd.gif";
 import { useSpring, animated } from "react-spring";
 import Typing from "./Typing";
