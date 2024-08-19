@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Poppins:wght@200&display=swap");
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient-bg {
+  background: linear-gradient(45deg, #282f94, #be1818);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+
+::-webkit-scrollbar {
+  width: .55em;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #282f94;
+  outline: 0px solid slategrey;
+}
+
+.scrollable {
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
