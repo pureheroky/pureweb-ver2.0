@@ -48,7 +48,7 @@ const About: React.FC = () => {
             text="About"
           />
         </div>
-        <div className="flex items-start justify-center z-10 flex-col p-4">
+        <div className="flex items-start justify-start text-start z-10 flex-col p-4">
           <span className="m-1 sm:m-3 flex flex-row">
             <Typing text="Name: " delay={30} styleElem="font-bold" />
             <div>&nbsp;</div>

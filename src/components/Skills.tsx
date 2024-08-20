@@ -5,6 +5,7 @@ import ProgressBar from "./ProgressBar";
 import { useCallback, useEffect, useState } from "react";
 import { getItem } from "../utils/getItem";
 import Typing from "./Typing";
+import React from "react";
 
 const Skills: React.FC<{ inside: () => void; outside: () => void }> = ({
   inside,

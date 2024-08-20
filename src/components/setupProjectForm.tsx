@@ -36,13 +36,13 @@ const AddProjectForm: React.FC<{
     console.log(formData, imageData);
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8080/projects",
+        "https://akirakayoo.store/projects",
         formData
       );
       console.log("Project added:", response.data);
       setTimeout(async () => {
         await axios.get(
-          `http://127.0.0.1:8080/uploadimage/projects/${formData.id}/${imageData}`
+          `https://akirakayoo.store/uploadimage/projects/${formData.id}/${imageData}`
         );
       }, 5000);
     } catch (error) {

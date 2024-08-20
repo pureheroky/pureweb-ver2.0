@@ -39,11 +39,11 @@ export const getItem = async (
     let value: string;
 
     if (!isImage) {
-      const result = await axios.get(`http://127.0.0.1:8080/getuservalue/${key}`);
+      const result = await axios.get(`https://akirakayoo.store/getuservalue/${key}`);
       value = result.data.data;
     } else if (collname && queryname) {
       const response = await axios.get(
-        `http://127.0.0.1:8080/getimage/${collname}/${queryname}`,
+        `https://akirakayoo.store/getimage/${collname}/${queryname}`,
         { responseType: "arraybuffer" }
       );
       const base64 = btoa(

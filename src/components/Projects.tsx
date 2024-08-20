@@ -30,7 +30,7 @@ const Projects: React.FC<{ inside: () => void; outside: () => void }> = ({
     const projectSet = new Set(projects);
 
     for (let i = 1; i < 8; i++) {
-      const result = await axios.get(`http://127.0.0.1:8080/getproject/${i}`);
+      const result = await axios.get(`https://akirakayoo.store/getproject/${i}`);
       if (!projectSet.has(result.data.data)) {
         projectSet.add(result.data.data);
       }
