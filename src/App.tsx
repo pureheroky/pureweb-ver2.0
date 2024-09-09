@@ -153,7 +153,7 @@ function App() {
                   <div onClick={close}>
                     <CloseIcon className="cursor-pointer" />
                   </div>
-                  <div className="w-full flex items-center flex-col text-center h-full font-Poppins text-sm font-bold text-eerie">
+                  <div className="w-full flex items-center flex-col text-center h-full font-Poppins text-sm font-bold text-eerie-black">
                     don't forget to follow my tg pls...{" "}
                     <a
                       href="https://t.me/psychopure"
