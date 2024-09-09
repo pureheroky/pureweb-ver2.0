@@ -25,7 +25,8 @@ html, body, #root {
 }
 
 .animated-gradient-bg {
-  background: linear-gradient(45deg, #282f94, #be1818);
+  /* background: linear-gradient(45deg, #282f94, #be1818); */
+  background: linear-gradient(45deg, black, black);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
 }
@@ -40,7 +41,7 @@ html, body, #root {
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: #282f94;
+  background-color: #ECE4B7;
   outline: 0px solid slategrey;
 }
 

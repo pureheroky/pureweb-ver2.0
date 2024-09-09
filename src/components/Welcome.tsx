@@ -58,12 +58,12 @@ const Welcome: React.FC = () => {
         <Typing
           text={username}
           delay={40}
-          styleElem="text-black-blue-dark-darker font-Poppins text-3xl font-bold"
+          styleElem="text-black-blue-dark-darker font-Poppins text-3xl font-bold text-eerie"
         />
         <Typing
           text={`${age} y.o fullstack developer`}
           delay={40}
-          styleElem="text-black-blue-dark-darker pt-2 font-Poppins text-xl font-semibold "
+          styleElem="text-black-blue-dark-darker pt-2 font-Poppins text-xl font-semibold text-eerie"
         />
 
         <div className="flex flex-col">
@@ -75,14 +75,14 @@ const Welcome: React.FC = () => {
           <Typing
             text="t.me/psychopure"
             delay={40}
-            styleElem="font-Poppins text-xl"
+            styleElem="font-Poppins text-xl text-eerie"
             clickable={true}
             url={tglink}
           />
           <Typing
             text="github.com/pureheroky"
             delay={40}
-            styleElem="font-Poppins text-xl"
+            styleElem="font-Poppins text-xl text-eerie"
             clickable={true}
             url={gitlink}
           />
@@ -112,7 +112,7 @@ const Welcome: React.FC = () => {
           <Typing
             text="scroll up to reveal other information"
             delay={40}
-            styleElem="text-black-blue-dark-darker pt-24 font-Poppins text-xl font-semibold"
+            styleElem="text-black-blue-dark-darker pt-24 font-Poppins text-xl font-semibold text-eerie"
           />
         </ComputerDetect>
       </div>

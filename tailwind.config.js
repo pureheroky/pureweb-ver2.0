@@ -11,7 +11,8 @@ module.exports = {
         "black-blue-dark-darker": "rgb(18, 20, 22)",
         "cherry-red": "#be1818",
         vanilla: "#ECE4B7",
-        eerie: "#191716",
+        eerie: "#e8e6e3",
+        eerie_black: "#191716",
         progressBar: "#282f94",
       },
       fontFamily: {

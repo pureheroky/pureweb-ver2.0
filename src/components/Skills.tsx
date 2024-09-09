@@ -86,7 +86,7 @@ const Skills: React.FC<{ inside: () => void; outside: () => void }> = ({
           type="text"
           value={current}
           onChange={handleSearch}
-          className="h-full w-80 p-4 text-2xl outline-none bg-vanilla/20 font-Poppins rounded-2xl shadow-md text-eerie font-semibold text-center"
+          className="h-full w-80 p-4 text-2xl outline-none bg-vanilla/10 font-Poppins rounded-2xl shadow-md text-eerie font-semibold text-center"
           placeholder="Search"
         />
       </div>
@@ -97,7 +97,7 @@ const Skills: React.FC<{ inside: () => void; outside: () => void }> = ({
           <ComputerDetect>
             <div
               style={{ gridTemplateColumns: `repeat(${grid}, minmax(0, 1fr))` }}
-              className="grid w-5/6 h-96 overflow-y-auto mt-4 bg-vanilla/15 z-20 rounded-lg"
+              className="grid w-5/6 h-96 overflow-y-auto mt-4 bg-vanilla/10 z-20 rounded-lg"
               onMouseEnter={inside}
               onMouseLeave={outside}
             >
@@ -105,7 +105,7 @@ const Skills: React.FC<{ inside: () => void; outside: () => void }> = ({
                 filteredElements.map((el, ind) => (
                   <div
                     key={ind}
-                    className="flex items-center justify-center m-2 text-2xl font-Poppins font-semibold rounded-xl text-eerie shadow-md bg-vanilla/10 p-3 min-w-max"
+                    className="flex items-center justify-center m-2 text-2xl font-Poppins font-semibold rounded-xl text-eerie shadow-md bg-vanilla/5 p-3 min-w-max"
                   >
                     {el}
                   </div>

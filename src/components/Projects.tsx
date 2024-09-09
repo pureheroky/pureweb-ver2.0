@@ -68,7 +68,7 @@ const Projects: React.FC<{ inside: () => void; outside: () => void }> = ({
         <div className="w-3/4">
           <ComputerDetect>
             <div
-              className="h-[550px] grid grid-cols-3 bg-vanilla/15 overflow-y-scroll z-20 rounded-lg"
+              className="h-[550px] grid grid-cols-3 bg-vanilla/5 overflow-y-scroll z-20 rounded-lg"
               onMouseEnter={inside}
               onMouseLeave={outside}
             >
