@@ -125,10 +125,10 @@ function App() {
           </ComputerDetect>
           <MobileDetect>
             <div className="w-full absolute bottom-0 items-end flex flex-row mb-8 justify-center mt-auto gap-32">
-              <div onClick={setPageBackward}>
+              <div onClick={setPageBackward} className="text-eerie">
                 <ArrowBackIosNewOutlined />
               </div>
-              <div onClick={setPageForward}>
+              <div onClick={setPageForward} className="text-eerie">
                 <ArrowForwardIosOutlined />
               </div>
             </div>
