@@ -1,0 +1,49 @@
+{
+  "result": {
+    "ru": {
+      "id": "5ba9173c-cb3c-48d0-9965-788ed17b8fa2",
+      "code": "amo.ext.11492154",
+      "secret_key": "b1694332cbaf11cc398c9e537cac0687c0d7a590",
+      "name": "AstroMessenger",
+      "webhook_url": "https://astroacademy1.com/amo/webhook/:scope_id",
+      "enabled": true,
+      "test_mode": false,
+      "allowed_acc_list": [
+        {
+          "id": "68125049-bf18-450e-aebf-bc53cd994e98",
+          "external_id": "amocrm:11492154"
+        }
+      ],
+      "contact_email": "a.golubyatnikov@astroacademy1.ru",
+      "created_at": 1726240181,
+      "updated_at": 1726240181,
+      "widget_code": "zai4cggnbnuwuaxdetocxiudwhjia8cdrmeqir8v",
+      "supports_reply": true,
+      "write_first": true,
+      "webhook_url_v2": "https://astroacademy1.com/amo/webhook/:scope_id",
+      "time_window": {
+        "enabled": false,
+        "expires": 0,
+        "tags": null,
+        "need_template": false
+      },
+      "bot": {
+        "id": "6c6c9bce-74e9-4740-a080-40e2d24be1a5",
+        "name": "AstroMessenger",
+        "is_bot": true
+      },
+      "webhook_events": ["messages"],
+      "icon": "https://st1.amocrm.ru/origins_icons/amo.ext.11492154.svg?1726240180",
+      "webhook_v2": true,
+      "time_window_support": false,
+      "need_display_template": false,
+      "time_window_enum": 0,
+      "saves_files": false,
+      "reactions_all": false,
+      "reactions_list": "",
+      "en_enabled": false,
+      "client_uuid": "367299ab-a769-459c-8443-38255fdc856b"
+    }
+  },
+  "error": null
+}
